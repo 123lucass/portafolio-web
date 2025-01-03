@@ -26,6 +26,7 @@ header {
 
 header h1{
     padding: 30px;
+    color: #d110eb;
 
 }
 
@@ -41,24 +42,38 @@ header img {
  header img:hover{
     transform: scale(1.1);
     transition: 0.3s;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
  }
 
 .nav {
-    color : #d48beb;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 20px;
-    display: block;
+display: flex;
+justify-content: center;
+
 }
 
+.nav a{
+    text-align:center;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 20px;
+    color: #ececec;
+    
+}
 
+.nav a:hover{
+    color: #d110eb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 section {
     margin: 0;
     width: 100%;
     height: 100%;
     padding: 4rem 1rem; /* Más espacio para facilitar la navegación */
-    min-height: 60vh; /* Asegura que cada sección ocupe al menos el alto de la pantalla */
+    min-height: 100vh; /* Asegura que cada sección ocupe al menos el alto de la pantalla */
     display: flex;
     flex-direction: column;
     background-color: #590da0;
@@ -74,13 +89,17 @@ section img{
 
 }
 
+#lenjuages{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
 
+}
 
- #imagen-centrada:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow:0 0 10px #c149e6;
-
+ #lenjuages:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
 }
 
 
@@ -105,9 +124,10 @@ section img{
 }
 
 .card1{
-    margin:0;
-    color:rgb(241, 85, 241);
-    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card1 img{
@@ -116,9 +136,10 @@ section img{
 }
 
 .card2{
-    margin:0;
-    color:rgb(241, 85, 241);
-    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card2 img{
@@ -127,9 +148,10 @@ section img{
 }
 
 .card3 {
-    margin:0;
-    color:rgb(241, 85, 241);
-    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card3 img{
     padding: 20px;
@@ -142,6 +164,10 @@ section img{
 
 }
 
+.card1:hover, .card2:hover, .card3:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 
 footer {
     background: #590da0;
