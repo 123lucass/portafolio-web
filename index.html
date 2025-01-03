@@ -3,102 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>mi portafolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Mi Portafolio</title>
+
 </head>
 <body>
-  <header>
-    <h1>Un poco de Lucas</h1>
-   
-<nav>
-    <div class="row m-2">
-        <img src="/img/WhatsApp Image 2024-12-26 at 2.55.24 PM.jpeg" style="border-radius: 50%;height: auto;width: 150px;" alt="foto de lucas">
-        <ul>
-           <li> <a href="#about">sobre mi</a> </li>
-           <li> <a href="#projects">proyectos</a></li>
-           <li><a href="#contact">contacto</a></li>
-        </ul>
-    </div>
-</nav>
-   </div>
-</header>
+    <header id="header">
+        <img src="/img/WhatsApp Image 2024-12-26 at 2.55.24 PM.jpeg" id="profile-img" alt="Foto de Lucas">
+        <h1 id="titulo">Un Poco Sobre Lucas</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#about">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="sections">
-
-
-    <section id="about">
-        <div class="content-wrapper">
-            <article>
-                <h2>sobre mi</h2>
-                <p>Hola! soy Dominguez Lucas , soy un desarrollador web en formacion 
-                    tengo experiencia en HTML5, CSS3 y JavaScript. Me gusta crear sitios web funcionales , atractivos y accesibles siempre buscando ofrecer la mejor experiencia al usuario.
-                </p>
-            </article>
-            <article>
-                <h2>Mis Estudios</h2>
-                <p>actualmente estoy alimentando mis conocimientos en programacion a travéz de cursos y proyectos personales.</p>
-                <p>nivel intermedio de ingles. sigo estudiando en base a cursos </p>
-                <div id="lenjuages">
-                    <img src="/img/1499794874html5-js-css3-logo-png.png" alt="logos-lenjuages">
-                </div>
-                <p>Si estas buscando a alguien comprometido, curioso y con ganas de aprender  ¡no dudes en contactarme!</p>
-            </article>
-        </div>
-       
+    <section id="about" class="container">
+        <h2 class="text-center">Sobre mí</h2>
+        <p class="text-center">
+            Soy Lucas Domínguez, un desarrollador web en formación con experiencia en HTML, CSS y JavaScript.
+            Me apasiona crear sitios web funcionales y atractivos, siempre buscando la mejor experiencia para los usuarios.
+        </p>
+        <h2 class="text-center">Mis Estudios</h2>
+        <p class="text-center"> Tengo bases de estudios en HTML5, CCS3, JavaScript 
+            tengo un nivel de ingles intermedio, sigo estudiando atravez de curso y perfecionando cada dia mas
+        </p>
+    <img src="/img/1499794874html5-js-css3-logo-png.png"  id="imagen-centrada">
     </section>
 
-     <section id="projects">
-        <div class="content-wrapper2">
-            <h2>proyectos</h2>
-            
-           
-                <h3>proyecto 1</h3>
-                <div id="proyecto1">
-                    <img src="/img/Captura de pantalla 2024-12-27 151255.png" alt="proyecto1" >
-                        </div>
-                <p>este fue uno de mis primeros proyectos, es una referencia de una e-commerce. trabjado en poco tiempo. proyecto sencillo pero muy bueno</p>
-                <a href="https://655fa7b956f2e02be366dee5--spontaneous-boba-b7bb04.netlify.app/">ver demo</a>
-         
-            <div>
-                <h3>proyecto 2</h3>
-                <div id="proyecto2">
-                    <img src="/img/Captura de pantalla 2024-12-28 152304.png" alt="proyecto2">
+    <section id="projects" class="container">
+        <h2 class="text-center" style="color: rgb(184, 21, 224); font-size: 50px;">Proyectos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card1">
+                    <img src="/img/Captura de pantalla 2024-12-27 151255.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1: E-commerce</h5>
+                        <p class="card-text">Referencia de un e-commerce, ideal para practicar diseño y funcionalidad.</p>
+                        <a href="https://655fa7b956f2e02be366dee5--spontaneous-boba-b7bb04.netlify.app" class="btn btn-primary" target="_blank">Ver Demo</a> <a href="https://github.com/123lucass" style="color: rgb(177, 59, 255); padding: 1rem;  font-size: 30px;" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-                <p>calculadora funcional muy buena para practicar codigo. realizada con sus funciones basicas</p>
-                <a href="https://gleaming-tiramisu-708001.netlify.app">ver demo</a>
             </div>
-            <div>
-                <h3>proyecto 3</h3>
-                <div id="proyecto3">
-                    <img src="/img/Captura de pantalla 2024-12-31 181336.png" alt="proyecto3">
+            <div class="col-md-4">
+                <div class="card2">
+                    <img src="/img/Captura de pantalla 2024-12-28 152304.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2: Calculadora</h5>
+                        <p class="card-text">Calculadora básica con operaciones matemáticas.</p>
+                        <a href="https://gleaming-tiramisu-708001.netlify.app" class="btn btn-primary" target="_blank">Ver Demo</a> <a href="https://github.com/123lucass" style="color: rgb(177, 59, 255); padding: 1rem;  font-size: 30px;" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-                <p>este proyecto es una lista de tareas, muy practica para el dia a dia, esta echa con html,css y JavaScript</p>
-                <a href="https://listadetareasd.netlify.app">ver demo</a>
+            </div>
+            <div class="col-md-4">
+                <div class="card3">
+                    <img src="/img/Captura de pantalla 2024-12-31 181336.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3: To-Do List</h5>
+                        <p class="card-text">Lista de tareas dinámica y práctica para organizar el día.</p>
+                        <a href="https://listadetareasd.netlify.app" class="btn btn-primary" target="_blank">Ver Demo</a> <a href="https://github.com/123lucass" style="color: rgb(162, 25, 253); padding: 1rem;  font-size: 30px;" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        
-    
-     </section>
+    </section>
 
-     <section id="contact">
-        <div class="content-wrapper3">
-            <h2 style="color:rgb(241, 85, 241);">contacto</h2>
-            <p>contactame:</p>
-            <div class="contenedor">
-            <a href="https://wa.me/5493794888858"  style="text-decoration: none; " target="_blank"><i class="bi bi-whatsapp" ></i>Escribime por WhatsApp</a>
-<a href="mailto:lucasdominguez171901@gmail.com" style="text-decoration: none;"><i class="bi bi-envelope-at-fill"></i> Mi Correo</a>
-            <a href="https://www.instagram.com/lucas__.dg/" target="_blank" style="text-decoration: none;"><i class="bi bi-instagram"></i> Mi Instagram</a>
-            <a href="https://www.linkedin.com/in/lucas-dominguez-656b242b3/" target="_blank" style="text-decoration: none;"><i class="bi bi-linkedin"></i> Linkedin</a>
-            </div>
+    <section id="contact" class="container text-center">
+        <h2 style="color:  rgb(176, 41, 218);">Contacto</h2>
+        <p>Puedes contactarme en:</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a href="https://wa.me/5493794888858" class="btn btn-success" target="_blank">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:lucasdominguez171901@gmail.com" class="btn btn-dark" target="_blank">
+                <i class="bi bi-envelope"></i> Correo
+            </a>
+            <a href="https://www.instagram.com/lucas__.dg/" class="btn btn-danger" target="_blank">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-dominguez-656b242b3/" class="btn btn-primary" target="_blank">
+                 <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
         </div>
-     </section>
-</div>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Lucas Domínguez</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2024 Lucas.D</p>
-</footer>
+    <script>
+        // Mostrar/ocultar la imagen de perfil en función de la sección activa
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (event) => {
+                const profileImg = document.getElementById('profile-img');
+                const targetId = event.target.getAttribute('href').substring(1);
+
+                if (targetId === 'header') {
+                    profileImg.style.opacity = '1'; // Mostrar la imagen
+                } else {
+                    profileImg.style.opacity = '0'; // Ocultar la imagen
+                }
+            });
+        });
+
+        // Mostrar la imagen por defecto al cargar la página
+        window.addEventListener('load', () => {
+            document.getElementById('profile-img').style.opacity = '1';
+        });
+    </script>
 </body>
 </html>
